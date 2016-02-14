@@ -64,6 +64,6 @@ Rails.application.routes.draw do
   get '/:locale' => 'pages#main'
 
   # root "admin/visitors#index"
-  root "pages#main"
+  root "pages#main", as: "ruut"
   
 end

@@ -9,11 +9,35 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
  *= require jquery-ui
  */
+ 
+ 
  
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.ui-menu { 
+  width: 200px; 
+  border: 0px;
+  
+}
+
+.prd {
+  color: blue;
+  font-size: 26px;
+}
+
+.blk{
+  margin-top: 50px;
+  margin-left: 50px;  
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
 
