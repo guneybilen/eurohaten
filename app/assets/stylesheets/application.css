@@ -12,3 +12,21 @@
  *
  *= require jquery-ui
  */
+ 
+ 
+
+.ui-menu { 
+  width: 100px; 
+  border: 0px;
+  
+}
+
+.prd {
+  color: blue;
+  font-size: 26px;
+}
+
+.blk{
+  margin-top: 200px;
+  margin-left: 100px;  
+}

@@ -1,25 +1,19 @@
-<ol class="breadcrumb">
-  <%= link_to "EuroHATEN", "" %>
-</ol>
 
-<div class="middle">
-  <div class="five">
-      <%= link_to(image_tag("Kataloglar/5.jpg", class:"five"), "") %>
-      <%= link_to "Ürünler", "", class:"btn btn-primary", role:"button" %>
-  </div>
-  <div class="katalog">
-      <%= link_to(image_tag("Kataloglar/katalog.jpg", class:"katalog"),  "") %>
-      <%= link_to "Katalog", "", class:"btn btn-primary", role:"button" %>  
-  </div>
-  
-    <div class="reference">
-      <%= link_to(image_tag("reference.jpg",  class:"reference"), "") %>
-      <%= link_to "Referanslar", "", class:"btn btn-primary", role:"button" %>
-    </div>  
-    
-    <div class="contact">
-      <%= link_to(image_tag("contact.jpg", class:"contact"), "") %>
-      <%= link_to "İletişim", "", class:"btn btn-primary", role:"button" %>
-    </div>
-</div>
-  
+<div class="blk">
+<%= label_tag "Urunler", nil, class: "prd" %>
+<ul id="menu">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3
+    <ul>
+      <li>Item 3-1</li>
+      <li>Item 3-2</li>
+      <li>Item 3-3</li>
+      <li>Item 3-4</li>
+      <li>Item 3-5</li>
+    </ul>
+  </li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+</ul>
+</div></div>
