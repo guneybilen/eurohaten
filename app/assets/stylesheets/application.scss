@@ -11,16 +11,51 @@
  * file per style scope.
  *
  *= require jquery-ui
- *= require_self
- *= require foundation_and_overrides
-
- *= require_tree .
+ 
+ // require_tree .
+ // require_self
  */
  
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-.vm{
-    
-    padding-top: 130px;
-    padding-left: 40px;
-    width: 150px;
+body {
+background-color: #C8C8C8;
 }
+
+.breadcrumb {
+    text-align: center;
+}
+
+.five{
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.katalog{
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.reference{
+    clear: both; 
+    float: left;   
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.contact{
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-top: 20px;
+}
+
+.middle {
+    position: absolute;
+    left: 35%;
+}
+

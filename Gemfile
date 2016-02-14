@@ -46,5 +46,6 @@ group :development do
 end
 
 gem 'jquery-ui-rails'
-gem 'foundation-rails'
+gem 'bootstrap-sass', '~> 3.3.6'
+
 
