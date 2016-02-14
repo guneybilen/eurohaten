@@ -54,6 +54,15 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   
+  
+  # config/routes.rb
+  scope "/:locale" do
+    resources :pages
+  end
+  
+  # config/routes.rb
+  get '/:locale' => 'pages#main'
+
   # root "admin/visitors#index"
   root "pages#main"
   

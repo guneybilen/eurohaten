@@ -1,19 +1,36 @@
 
 <div class="blk">
-<%= label_tag "Urunler", nil, class: "prd" %>
+<%= label_tag t("products"), nil, class: "prd" %>
 <ul id="menu">
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3
+  <li><%= link_to t("registered_trademarks"), "#" %>
+    <ul><%= link_to "Rosso Bianco", "#" %></ul>
+  </li>
+  <li><%= link_to t("cosmetic_bottles"), "#" %></li>
+  <li><%= link_to t("soaps"), "#" %>
     <ul>
-      <li>Item 3-1</li>
-      <li>Item 3-2</li>
-      <li>Item 3-3</li>
-      <li>Item 3-4</li>
-      <li>Item 3-5</li>
+      <li><%= link_to t("in_box"), "#" %></li>
+      <li><%= link_to t("without_box"), "#" %></li>
     </ul>
   </li>
-  <li>Item 4</li>
-  <li>Item 5</li>
+  <li><%= link_to t("slippers"), "#" %></li>
+  <li><%= link_to t("other_amenities"), "#" %>
+    <ul>
+      <li><%= link_to t("vanity_kit"), "#" %></li>
+      <li><%= link_to t("dental_kit"), "#" %></li>
+      <li><%= link_to t("shaving_kit"), "#" %></li>
+      <li><%= link_to t("shower_cap"), "#" %></li>
+      <li><%= link_to t("natural_fibers"), "#" %></li>
+      <li><%= link_to t("cotton_pads"), "#" %></li>
+      <li><%= link_to t("cotton_buds"), "#" %></li>
+      <li><%= link_to t("glass_coaster_covers"), "#" %></li>
+      <li><%= link_to t("bags"), "#" %></li>
+      <li><%= link_to t("hygiene_bags"), "#" %></li>
+      <li><%= link_to t("wc_strings"), "#" %></li>
+      <li><%= link_to t("wet_tissues"), "#" %></li>
+      <li><%= link_to t("box_tissues"), "#" %></li>
+      <li><%= link_to t("match_boxes"), "#" %></li>
+      <li><%= link_to t("trays"), "#" %></li>
+    </ul>
+  </li>
 </ul>
-</div></div>
+</div>
