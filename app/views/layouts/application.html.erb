@@ -12,7 +12,7 @@
     <div class="navbar-header">
       <%= link_to "EuroHaten", ruut_path, class: "navbar-brand" %>
     </div>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav  pull-right">
       <li class="active"><%= link_to t("home"), ruut_path %></li>
       <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t("about_us") %>
@@ -25,6 +25,7 @@
       </li>
       <li><%= link_to t("references"), "#" %></li> 
       <li><%= link_to t("contact_us"), "#" %></li> 
+      <li><%= language_selector %></li>
     </ul>
   </div>
 </nav>

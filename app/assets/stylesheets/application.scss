@@ -30,7 +30,7 @@
 }
 
 .blk{
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 50px;  
   float: left;
 }
@@ -46,11 +46,14 @@ a{
 }
 
 div .carousel-inner {
+  margin-top: 40px;
   height: 330px;
 }
 
-ul.navbar-nav li{
-    left: 70%;
+.navbar-fixed-bottom{
+    left: 35%;
 }
+
+
 
 
