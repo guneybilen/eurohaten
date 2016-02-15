@@ -32,5 +32,16 @@
 
 <%= yield %>
 
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><%= link_to t("new_products"), "#" %></li> 
+      <li><%= link_to t("contact_us"), "#" %></li>
+      <li><%= link_to t("hotel_sets"), "#" %></li> 
+      <li><%= link_to t("certificates"), "#" %></li>
+    </ul>
+  </div>
+</nav>
+
 </body>
 </html>

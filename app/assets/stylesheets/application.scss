@@ -32,6 +32,7 @@
 .blk{
   margin-top: 50px;
   margin-left: 50px;  
+  float: left;
 }
 
 a{
@@ -39,5 +40,17 @@ a{
 }
 
 
+#carousel-example-generic{
+    width: 500px;
+    margin-left: 500px;
+}
+
+div .carousel-inner {
+  height: 330px;
+}
+
+ul.navbar-nav li{
+    left: 70%;
+}
 
 
