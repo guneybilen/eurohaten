@@ -47,7 +47,11 @@ a{
 
 div .carousel-inner {
   margin-top: 40px;
-  height: 330px;
+  height: 400px;
+}
+
+.carousel-inner .item img{
+    height: 400px;
 }
 
 .navbar-fixed-bottom{
