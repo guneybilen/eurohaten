@@ -54,6 +54,16 @@ div .carousel-inner {
     height: 400px;
 }
 
+// the following is taken from a web site.
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    float: none;  // I added this.
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
 .navbar-fixed-bottom{
     left: 35%;
 }

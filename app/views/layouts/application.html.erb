@@ -12,7 +12,7 @@
     <div class="navbar-header">
       <%= link_to "EuroHaten", ruut_path, class: "navbar-brand" %>
     </div>
-    <ul class="nav navbar-nav  pull-right">
+    <ul class="nav navbar-nav">
       <li class="active"><%= link_to t("home"), ruut_path %></li>
       <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t("about_us") %>
@@ -25,7 +25,7 @@
       </li>
       <li><%= link_to t("references"), "#" %></li> 
       <li><%= link_to t("contact_us"), "#" %></li> 
-      <li><%= language_selector %></li>
+      <li class="lang pull-right"><%= language_selector %></li>
     </ul>
   </div>
 </nav>
@@ -33,16 +33,21 @@
 
 <%= yield %>
 
-<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li><%= link_to t("new_products"), "#" %></li> 
-      <li><%= link_to t("catalogue"), "#" %></li>
-      <li><%= link_to t("hotel_sets"), "#" %></li> 
-      <li><%= link_to t("certificates"), "#" %></li>
-    </ul>
-  </div>
-</nav>
+<!-- below is for footer navbar -->
+<!--<nav class="navbar navbar-default navbar-fixed-bottom">-->
+<!--  <div class="container">-->
+<!--    <ul class="nav navbar-nav">-->
+<!--      <li>< link_to t("new_products"), "#" %></li> -->
+<!--      <li>< link_to t("catalogue"), "#" %></li>-->
+<!--      <li>< link_to t("hotel_sets"), "#" %></li> -->
+<!--      <li>< link_to t("certificates"), "#" %></li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<%= link_to "Haten Katalog 1", pgs_pdf1_path %>
+<%= link_to "Haten Katalog 2", pgs_pdf2_path %>
+
 
 </body>
 </html>
