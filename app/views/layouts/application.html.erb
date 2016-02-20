@@ -45,9 +45,19 @@
 <!--  </div>-->
 <!--</nav>-->
 
-<%= link_to "Haten Katalog 1", pgs_pdf1_path %>
-<%= link_to "Haten Katalog 2", pgs_pdf2_path %>
+<div class="navcontainer">
+  <ul>
+    <li><%= link_to t("certificates"), "" %></li>
+    <li><%= link_to t("haten_katalog_brief"), pgs_pdf1_path %></li>
+    <li><%= link_to t("haten_katalog_main"), pgs_pdf2_path %></li>
+  </ul>
+</div>
 
-
+<div class="navcontainer">
+  <ul>
+    <li><%= link_to t("new_products"), "" %></li>
+    <li><%= link_to t("hotel_sets"), "" %></li>
+  </ul>
+</div>
 </body>
 </html>
