@@ -1,58 +1,4 @@
 
-<div class="blk">
-<%= label_tag t("products"), nil, class: "prd" %>
-<ul id="menu">
-  <li><%= link_to t("registered_trademarks"), "#" %>
-    <ul><li><%= link_to "Rosso Bianco", "#" %></li></ul>
-  </li>
-  <hr />
-  <li><%= link_to t("cosmetic_bottles"), "#" %></li>
-  <hr />
-  <li><%= link_to t("soaps"), "#" %>
-    <ul>
-      <li><%= link_to t("in_box"), "#" %></li>
-      <hr />
-      <li><%= link_to t("without_box"), "#" %></li>
-    </ul>
-  </li>
-  <hr />
-  <li><%= link_to t("slippers"), "#" %></li>
-  <hr />
-  <li><%= link_to t("other_amenities"), "#" %>
-    <ul>
-      <li><%= link_to t("vanity_kit"), "#" %></li>
-      <hr />
-      <li><%= link_to t("dental_kit"), "#" %></li>
-      <hr />
-      <li><%= link_to t("shaving_kit"), "#" %></li>
-      <hr />
-      <li><%= link_to t("shower_cap"), "#" %></li>
-      <hr />
-      <li><%= link_to t("natural_fibers"), "#" %></li>
-      <hr />
-      <li><%= link_to t("cotton_pads"), "#" %></li>
-      <hr />
-      <li><%= link_to t("cotton_buds"), "#" %></li>
-      <hr />
-      <li><%= link_to t("glass_coaster_covers"), "#" %></li>
-      <hr />
-      <li><%= link_to t("bags"), "#" %></li>
-      <hr />
-      <li><%= link_to t("hygiene_bags"), "#" %></li>
-      <hr />
-      <li><%= link_to t("wc_strings"), "#" %></li>
-      <hr />
-      <li><%= link_to t("wet_tissues"), "#" %></li>
-      <hr />
-      <li><%= link_to t("box_tissues"), "#" %></li>
-      <hr />
-      <li><%= link_to t("match_boxes"), "#" %></li>
-      <hr />
-      <li><%= link_to t("trays"), "#" %></li>
-    </ul>
-  </li>
-</ul>
-</div>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -90,4 +36,87 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
+
+<!-- below is for footer navbar -->
+<!--<nav class="navbar navbar-default navbar-fixed-bottom">-->
+<!--  <div class="container">-->
+<!--    <ul class="nav navbar-nav">-->
+<!--      <li>< link_to t("new_products"), "#" %></li> -->
+<!--      <li>< link_to t("catalogue"), "#" %></li>-->
+<!--      <li>< link_to t("hotel_sets"), "#" %></li> -->
+<!--      <li>< link_to t("certificates"), "#" %></li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<div class="navcontainer">
+  <ul>
+    <li><%= link_to t("certificates"), "#", "data-toggle": "modal", "data-target": "#myModal"  %></li>
+    <li><%= link_to t("haten_katalog_brief"), pgs_pdf1_path, class: "wait" %></li>
+    <li><%= link_to t("haten_katalog_main"), pgs_pdf2_path, class: "wait" %></li>
+    <li><%= link_to t("new_products"), "" %></li>
+    <li><%= link_to t("hotel_sets"), "" %></li>
+  </ul>
+</div>
+
+<!-- Trigger the modal with a button -->
+<!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><%= t("certificates") %></h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          <ul>
+            <li>
+              <%= link_to(image_url("kalite_belgeleri/good_manufacturing_practices.jpg"), {target: "_blank"} ) do %> 
+                <%= image_tag("kalite_belgeleri/good_manufacturing_practices.jpg") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to(image_url("kalite_belgeleri/ISO9001_2008.jpg"), {target: "_blank"} ) do %> 
+                <%= image_tag("kalite_belgeleri/ISO9001_2008.jpg") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to(image_url("kalite_belgeleri/ISO10002_2004.jpg"), {target: "_blank"} ) do %> 
+                <%= image_tag("kalite_belgeleri/ISO10002_2004.jpg") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to(image_url("kalite_belgeleri/ISO14001_2004.jpg"), {target: "_blank"} ) do %> 
+                <%= image_tag("kalite_belgeleri/ISO14001_2004.jpg") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to(image_url("kalite_belgeleri/ISO18001_2007.jpg"), {target: "_blank"} ) do %> 
+                <%= image_tag("kalite_belgeleri/ISO18001_2007.jpg") %>
+              <% end %>
+            </li>
+          </ul>
+        </p>
+        <p>
+          <ul class="labels">
+          <li><%= t("good_manufacturing_practices") %></li>
+          <li><%= "ISO9001-2008" %></li>
+          <li><%= "ISO10002-2004" %></li>
+          <li><%= "ISO14001-2004" %></li>
+          <li><%= "ISO18001-2007" %></li>
+          </ul>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><%= t("close") %></button>
+      </div>
+    </div>
+
+  </div>
 </div>
