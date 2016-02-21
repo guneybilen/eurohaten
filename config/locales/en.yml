@@ -24,7 +24,7 @@ en:
   about_us: "About Us"
   contact_us: "Contact Us"
   references: "References"
-  profile: "Prpfile"
+  profile: "Profile"
   production: "Production"
   vision_mission: "Vision and Mission"
   products: "Products"
@@ -56,5 +56,6 @@ en:
   certificates: "Certificates"
   haten_katalog_main: "Haten Catologue Main"
   haten_katalog_brief: "Haten Catologue Brief"
+  good_manufacturing_practices: "Good Manufacturing Practices"
 
 

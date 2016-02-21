@@ -21,5 +21,21 @@
 $(document).on('ready page:load', function () {
   $( "#menu" ).menu();
 
+  $(".wait").click(function() {
+      document.body.style.cursor  = 'wait';
+      	
+// document.body.style.cursor  = 'default';
+// will change the cursor back to the normal style.
+
+  });
+
+//   $(".kapat").click(function() {
+    //   document.body.style.cursor  = 'wait';
+      	
+    //  document.body.style.cursor  = 'default';
+// will change the cursor back to the normal style.
+
+//   });
+
 });
 
