@@ -9334,6 +9334,19 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 // will change the cursor back to the normal style.
 
   });
+  
+  $("a.vanity_kit").click(function() {
+  	$("ul.hp > li:first").removeClass("active");
+  });
+
+  
+  $("div.hp").click(function() {
+  	$("ul.hp > li:first").addClass("active");
+  });
+  
+  if ( $( "div#links" ).length ) {
+    $("ul.hp > li:first").removeClass("active");
+  }
 
 //   $(".kapat").click(function() {
     //   document.body.style.cursor  = 'wait';

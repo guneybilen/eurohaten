@@ -19,10 +19,10 @@
 <body>
   <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="navbar-header hp">
       <%= link_to "EuroHaten", ruut_path, class: "navbar-brand" %>
     </div>
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav hp">
       <li class="active"><%= link_to t("home"), ruut_path %></li>
       <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t("about_us") %>
@@ -61,7 +61,7 @@
   <hr />
   <li><%= link_to t("other_amenities"), "#" %>
     <ul>
-      <li><%= link_to t("vanity_kit"), gallery_other_amenities_path(id: "vanity_kit") %></li>
+      <li><%= link_to t("vanity_kit"), gallery_other_amenities_path(id: "vanity_kit"), class: "vanity_kit" %></li>
       <hr />
       <li><%= link_to t("dental_kit"), "#" %></li>
       <hr />
