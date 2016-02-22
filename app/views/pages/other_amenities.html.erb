@@ -1,0 +1,74 @@
+
+
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if @id == "vanity_kit" %>
+<div id="links">
+    
+    <%# link_to(image_url("Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/1.jpg"), {"data-dialog" => "data-dialog"}) do %> 
+                 <%# image_tag("Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/1.jpg") %> 
+               <%# end %>
+               
+    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/1.jpg" title="" data-gallery>
+        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/1.jpg" alt="">
+    </a>
+    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/2.jpg" title="" data-gallery>
+        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/2.jpg" alt="">
+    </a>
+    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/3.jpg" title="" data-gallery>
+        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/3.jpg" alt="">
+    </a>
+    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/4.jpg" title="" data-gallery>
+        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/4.jpg" alt="">
+    </a>
+    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/5.jpg" title="" data-gallery>
+        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/5.jpg" alt="">
+    </a>
+    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/6.jpg" title="" data-gallery>
+        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/6.jpg" alt="">
+    </a>
+    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/7.jpg" title="" data-gallery>
+        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/7.jpg" alt="">
+    </a>
+</div>
+
+<% end %>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<!--<script src="js/bootstrap-image-gallery.min.js"></script>-->

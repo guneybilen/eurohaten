@@ -11,4 +11,7 @@ class PagesController < ApplicationController
       send_file("#{Rails.root}/public/haten_katalog_main.pdf", :type => 'application/pdf', :disposition => 'inline')
     end
     
+    def other_amenities
+      @id = params[:id]
+    end
 end

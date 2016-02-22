@@ -57,17 +57,18 @@ Rails.application.routes.draw do
   
   # config/routes.rb
   scope "/:locale" do
+    root "pages#main", as: "ruut"
     resources :pages
     get 'pdf1' => "pages#pdf1", as: "pgs_pdf1"
     get 'pdf2' => "pages#pdf2", as: "pgs_pdf2"
+    get "pages/other_amenities/:id" => "pages#other_amenities", as: "gallery_other_amenities" 
   end
   
   # config/routes.rb
-  get '/:locale' => 'pages#main'
+  # get '/:locale' => 'pages#main'
 
   # root "admin/visitors#index"
-  root "pages#main", as: "ruut"
   
-
   
+ 
 end

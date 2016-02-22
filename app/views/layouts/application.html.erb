@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>EuroHaten</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
+  <!--below 2 links are for blueimp image gallery-->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <!--<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">-->
+  
+  <!--jquery-->
+  <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+  <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+ 
 </head>
 <body>
   <nav class="navbar navbar-default">
@@ -51,7 +61,7 @@
   <hr />
   <li><%= link_to t("other_amenities"), "#" %>
     <ul>
-      <li><%= link_to t("vanity_kit"), "#" %></li>
+      <li><%= link_to t("vanity_kit"), gallery_other_amenities_path(id: "vanity_kit") %></li>
       <hr />
       <li><%= link_to t("dental_kit"), "#" %></li>
       <hr />
