@@ -153,9 +153,22 @@ div#links img{
   width: 100px;
   height: 100px;
 }
+ 
+a.dental_kit_next_line{
+  display: block;
+}
 
 div#links{
   float: left;
-  margin-left: 250px;
+  margin-left: 200px;
   margin-top: 20px;
 }
+
+div#links.dental_kit {
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+
+
+

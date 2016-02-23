@@ -9335,9 +9335,9 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 
   });
   
-  $("a.vanity_kit").click(function() {
-  	$("ul.hp > li:first").removeClass("active");
-  });
+  //$("a.vanity_kit").click(function() {
+  	// $("ul.hp > li:first").removeClass("active");
+  //});
 
   
   $("div.hp").click(function() {

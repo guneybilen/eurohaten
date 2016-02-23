@@ -37,35 +37,9 @@
 </div>
 
 <% if @id == "vanity_kit" %>
-<div id="links">
-    
-    <%# link_to(image_url("Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/1.jpg"), {"data-dialog" => "data-dialog"}) do %> 
-                 <%# image_tag("Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/1.jpg") %> 
-               <%# end %>
-   
-    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/1.gif" title="" data-gallery>
-        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/1.gif" alt="">
-    </a>
-    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/2.gif" title="" data-gallery>
-        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/2.gif" alt="">
-    </a>
-    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/3.gif" title="" data-gallery>
-        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/3.gif" alt="">
-    </a>
-    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/4.gif" title="" data-gallery>
-        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/4.gif" alt="">
-    </a>
-    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/5.gif" title="" data-gallery>
-        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/5.gif" alt="">
-    </a>
-    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/6.gif" title="" data-gallery>
-        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/6.gif" alt="">
-    </a>
-    <a href="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/7.gif" title="" data-gallery>
-        <img src="/images/Kataloglar/KISISELBAKIMURUNLERI/KISISELBAKIMSETI/7.gif" alt="">
-    </a>
-</div>
-
+  <%= render 'vanity_kit' %>
+<% elsif @id == "dental_kit" %>
+  <%= render 'dental_kit' %>
 <% end %>
 
 
