@@ -164,11 +164,12 @@ div#links{
   margin-top: 20px;
 }
 
-div#links.dental_kit {
+div#links.dental_kit, .shower_cap, .natural_fibers, .cotton_pads, .cotton_buds {
   margin-left: 150px;
   margin-top: 20px;
 }
 
-
-
+a.cotton_pads_next_line{
+  display: block;
+}
 
