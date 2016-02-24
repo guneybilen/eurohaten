@@ -154,22 +154,22 @@ div#links img{
   height: 100px;
 }
  
-a.dental_kit_next_line{
+div.dental_kit_next_line, div.cotton_pads_next_line, 
+div.bags_next_line, div.sewing_set_next_line {
   display: block;
 }
 
-div#links{
+div#links {
   float: left;
   margin-left: 200px;
   margin-top: 20px;
 }
 
-div#links.dental_kit, .shower_cap, .natural_fibers, .cotton_pads, .cotton_buds {
+div#links.dental_kit, div.shower_cap, div.natural_fibers, div.cotton_pads, 
+div.cotton_buds, div.bags, div.hygiene_bags, div.wc_strings, div.wet_tissues,
+div.sewing_set {
   margin-left: 150px;
   margin-top: 20px;
 }
 
-a.cotton_pads_next_line{
-  display: block;
-}
 
