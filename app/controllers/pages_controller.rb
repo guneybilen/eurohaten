@@ -14,4 +14,25 @@ class PagesController < ApplicationController
     def other_amenities
       @id = params[:id]
     end
+    
+    def profile
+      setter("profile")
+    end 
+    
+    def production 
+      setter("production")
+    end
+    
+    def vandm 
+      setter("vandm")
+    end
+    
+    def setter(n)
+      if I18n.locale == 'en'
+        render "#{n}.en.html.erb"
+      elsif I18n.locale == 'tr'
+        render "#{n}.tr.html.erb"
+      end
+    end
+    
 end

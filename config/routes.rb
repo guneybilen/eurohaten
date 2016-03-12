@@ -61,7 +61,10 @@ Rails.application.routes.draw do
     resources :pages
     get 'pdf1' => "pages#pdf1", as: "pgs_pdf1"
     get 'pdf2' => "pages#pdf2", as: "pgs_pdf2"
-    get "pages/other_amenities/:id" => "pages#other_amenities", as: "gallery_other_amenities" 
+    get "other_amenities/:id" => "pages#other_amenities", as: "gallery_other_amenities" 
+    get "profile" => "pages#profile", as: "profile"
+    get "production" => "pages#production", as: "production"
+    get "vandm" => "pages#vandm", as: "vandm"
   end
   
   # config/routes.rb
