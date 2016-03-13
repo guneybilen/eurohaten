@@ -15,6 +15,12 @@ class PagesController < ApplicationController
       @id = params[:id]
     end
     
+    def slippers 
+    end 
+    
+    def soaps
+    end
+    
     def profile
       setter("profile")
     end 
@@ -26,6 +32,10 @@ class PagesController < ApplicationController
     def vandm 
       setter("vandm")
     end
+    
+    def contact_us
+      setter("contact_us")
+    end 
     
     def setter(n)
       if I18n.locale == 'en'

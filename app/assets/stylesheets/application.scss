@@ -69,10 +69,23 @@ div .carousel-inner {
 ul.navbar-nav {
   width: 1200px;
   	text-align: center;
-	 > li {
+	 > li:not(:first-child) {
 	  float: none;
 		display: inline-block;
   }
+}
+
+.ikon {
+  margin-top: 10px; 
+}
+
+li.eurohaten {
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+  // margin-top: 50px !important;
+  //vertical-align: middle;
 }
 
 .container-fluid{
@@ -172,16 +185,30 @@ div.sewing_set {
   margin-top: 20px;
 }
 
+div#links.bottles {
+  margin-left: 300px;
+}
 
-div.profile, div.production, div.vandm {
+div#links.soaps {
+  margin-left: 400px;
+}
+
+div.profile, div.production, div.vandm div.contact_us {
   float: left;
   margin-top: 40px;
   margin-left: 400px;
 }
-span.header-profile, span.header-production, span.header-vandm {
+span.header-profile, span.header-production, span.header-vandm, span.header-contact_us {
   font-size: 22px;
 }
 
+span.header-contact_us2 {
+  font-size: 20px;
+}
+
+span.header-contact_us3 {
+  font-size: 18px;
+}
 
 div.paragraph_fonts {
   font-size: 16px;

@@ -9339,15 +9339,36 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
   	// $("ul.hp > li:first").removeClass("active");
   //});
 
+   $("div.hp").click(function() {
+     $("ul.hp > li:initial").addClass("active");
+   }); 
   
-  $("div.hp").click(function() {
-  	$("ul.hp > li:first").addClass("active");
-  });
   
-  if ( $( "div#links" ).length ) {
-    $("ul.hp > li:first").removeClass("active");
-  }
+   if ( $( "div.sidemenu" ).length ) {
+     $("ul.hp > li.initial").removeClass("active");
+   }
+  
+   if ( $( "div.contact_us" ).length ) {
+   	 $("ul.hp > li.initial").removeClass("active");
+     $(".contact").addClass("active");
+   }
+  
+   if ( $( "div.profile, div.production, div.vandm" ).length ) {
+  	  $("ul.hp > li.initial").removeClass("active");
+  	  $("li.dropdown").css("border", "red 2px solid");
+    } 
 
+  //$(document).on('page:load', function() {
+    
+    // $(document).trigger('ready');
+
+  //});
+
+  //$(".dropdown-menu-profile").click(function(){
+  	// $(".dropdown-menu-profile").remove()
+  	// $(".dropdown-toggle").append("<%= escape_javascript(t('about_us')/t('profile')) %>")
+  //});
+  
 //   $(".kapat").click(function() {
     //   document.body.style.cursor  = 'wait';
       	

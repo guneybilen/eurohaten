@@ -58,13 +58,17 @@ Rails.application.routes.draw do
   # config/routes.rb
   scope "/:locale" do
     root "pages#main", as: "ruut"
-    resources :pages
+    resources :pages, except: [:index, :show, :new, :create, :edit, :update, :delete]
     get 'pdf1' => "pages#pdf1", as: "pgs_pdf1"
     get 'pdf2' => "pages#pdf2", as: "pgs_pdf2"
     get "other_amenities/:id" => "pages#other_amenities", as: "gallery_other_amenities" 
     get "profile" => "pages#profile", as: "profile"
     get "production" => "pages#production", as: "production"
     get "vandm" => "pages#vandm", as: "vandm"
+    get "contact_us" => "pages#contact_us", as: "contact_us"
+    get "slippers" => "pages#slippers", as: "slippers"
+    get "bottles" => "pages#bottles", as: "bottles"
+    get "soaps" => "pages#soaps", as: "soaps"
   end
   
   # config/routes.rb

@@ -14,27 +14,31 @@
   <!--jquery-->
   <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
   <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
- 
+  <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header hp">
-      <%= link_to "EuroHaten", ruut_path, class: "navbar-brand" %>
+      <span class: "navbar-brand">
+        <%= image_tag "icon.jpg",  height: '32', width: '32', alt: "EuroHaten", class: "ikon" %>
+      </span>
     </div>
+    
     <ul class="nav navbar-nav hp">
-      <li class="active"><%= link_to t("home"), ruut_path %></li>
+      <li class="eurohaten"><%= link_to "EuroHaten", ruut_path %></li>
+      <li class="active initial"><%= link_to t("home"), ruut_path %></li>
       <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t("about_us") %>
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><%= link_to t("profile"), profile_path %></li>
+          <li class: "dropdown-menu-profile"><%= link_to t("profile"), profile_path %></li>
           <li><%= link_to t("production"), production_path %></li>
           <li><%= link_to t("vision_mission"), vandm_path %></li> 
         </ul>
       </li>
       <li><%= link_to t("references"), "#" %></li> 
-      <li><%= link_to t("contact_us"), "#" %></li> 
+      <li class= "contact"><%= link_to t("contact_us"), contact_us_path %></li> 
       <li class="lang pull-right"><%= language_selector %></li>
     </ul>
   </div>
@@ -47,17 +51,17 @@
     <ul><li><%= link_to "Rosso Bianco", "#" %></li></ul>
   </li>
   <hr />
-  <li><%= link_to t("cosmetic_bottles"), "#" %></li>
+  <li><%= link_to t("cosmetic_bottles"), bottles_path %></li>
   <hr />
-  <li><%= link_to t("soaps"), "#" %>
-    <ul>
-      <li><%= link_to t("in_box"), "#" %></li>
+  <li><%= link_to t("soaps"), soaps_path %>
+    <!-- ul>
+      <li><%# link_to t("in_box"), "#" %></li>
       <hr />
-      <li><%= link_to t("without_box"), "#" %></li>
-    </ul>
+      <li><%# link_to t("without_box"), "#" %></li>
+    </ul -->
   </li>
   <hr />
-  <li><%= link_to t("slippers"), "#" %></li>
+  <li><%= link_to t("slippers"), slippers_path %></li>
   <hr />
   <li><%= link_to t("other_amenities"), "#" %>
     <ul>
